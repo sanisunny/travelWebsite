@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {font-family: "TimesNewRoman", Times, sans-serif;}
+div.title-head {background-image: url("https://cdn.pixabay.com/photo/2014/10/01/14/11/suitcase-468445_960_720.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-right: 30px;
+	margin-left: 30px;
+	//margin-top: 10px;
+
+}
+div.title-head-text {
+font-family: "TimesNewRoman", Times, sans-serif;
+font-size: 1000%;
+text-align: center;
+color: white;
+}
+
+div.Barcelona {
+background-image: url("https://cdn.pixabay.com/photo/2015/09/23/15/29/barcelona-953904_960_720.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-right: 30px;
+	margin-left: 30px;
+color: white;
+}
+
+div.Paris {
+background-image: url("https://cdn.pixabay.com/photo/2016/01/22/16/42/eiffel-tower-1156146_960_720.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-right: 30px;
+	margin-left: 30px;
+color: white;
+}
+
+div.Tokyo {
+background-image: url("https://cdn.pixabay.com/photo/2017/10/01/13/27/tokyo-2805500_960_720.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-right: 30px;
+	margin-left: 30px;
+color: white;
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<div class="title-head">
+	<div class="title-head-text">
+	<p>HOW DO I SAY HELLO IN?</p>
+	</div>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Barcelona')">Barcelona</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Interested...?')">Interested...?</button>
+</div>
+
+<div id="Barcelona" class="tabcontent Barcelona">
+  <p><i>Hola!</i></p>
+  <p>Barcelona, is one of Spain's most populated, beautiful, and historic cities. Founded as a Roman Colony in 15 BC, 
+     the city thrived under Roman rule; bustling with trade, it sure was a force to be reckoned with. Later, Barcelona under Muslim rule,
+     but after Christian conquest, was governed by the Crown of Aragon. The rich history of Barcelona can only be <i>fully</i> experienced
+     with our somewhat unconventional tours!</p>
+<ul>
+	<li>Walking through the Gothic Quarter, count all of the Gargoyles and give them all rhyming names. Test at the end.</li>
+	<li>Walk down the streets yelling that you hate soccer, you'll be sure to stand out.</li>
+	<li>Scam as many bars as possible into giving you free Sangria.</li>
+	<li>Buy out every single Vespa in Barcelona so no tourist can take cheesy photos.</li>
+	<li>...Get the full list on our tour!</li>
+	</ul>
+</div>
+
+<div id="Paris" class="tabcontent Paris">
+  <p><i>Bonjour!</i></p>
+  <p>Paris, the city of love, was founded towards the end of the 3rd century by the Gauls. Later, Julius Caesar and his legions
+     built a settlement. Over centuries, the French developed their own governance - a long monarchial system. The regality of 
+     French history can be seen from the historic cities of Paris and Versailles to the countryland of Bordeaux. The rich history of 
+     Paris can only be <i>fully</i> experienced with our somewhat unconventional tours!</p> 
+<ul>
+	<li>Get lost in the catacombs.</li>
+	<li>Dress up in 18th century costume wear and impersonate Queen Marie Antoinette. Walk down the streets pretending that you are indeed
+	     her and that you were transported in time to the present. Keep count of how many believe you.</li>
+	<li>Re-create the beginning of the children's TV Show "Madeline".</li>
+	<li>Find the perfect croissant.</li>
+	<li>...Get the full list on our tour!</li>
+	</ul>
+</div>
+
+<div id = "Interested...?" class="tabcontent">
+   <p>Thanks for stopping by, we appreciate the interest. Unfortunately, we only cater to a select few. If you're good enough, we'll come to you.
+      Safe travels!</p>
+</div>
+<div id="Tokyo" class="tabcontent Tokyo">
+  <p><i>こんにちは!</i></p>
+  <p>Tokyo, the capital of the "Land of the Rising Sun", shines as brightly as the sun in our list of must-see places. The story of Tokyo begins some 400 years ago.
+     The city was originally named Edo, similar to one of the greatest periods in Japanese history - the Edo Period: The last period of isolationist Japan where the 
+     country was still able to be economically, politically, and socially indepedent. During the Edo Period, the Emperor moved his capital from Kyoto to Tokyo; since then, 
+     Tokyo has become the powerhouse of Japan. The rich history of Toky can only be <i>fully</i> experienced with our somewhat unconventional tours!</p>
+<ul>
+	<li>Find a whale.</li>
+	<li>Create your own woodblock print.</li>
+	<li>Dress up as a sumo wrestler, walk into a sumo stable and compete against someone. </li>
+	<li>Attend a Kabuki theater! Then put on your own show.</li>
+	<li>...Get the full list on our tour!</li>
+	</ul>
+</div>
+
+<div id="Interested...?" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
